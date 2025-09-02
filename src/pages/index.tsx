@@ -44,7 +44,7 @@ export default function Home() {
         {/*Resultado*/}
         { shortUrl &&(
           <div className=" flex flex-row gap-2 items-center">
-            <p className="">Url : <a href={shortUrl} target="_blank" rel="noreferrer" className="text-secondary">{shortUrl}</a> (Remember it doesn't work)</p>
+            <p className="">Url : <a href={shortUrl} target="_blank" rel="noreferrer" className="text-secondary">{shortUrl}</a> (Remember it doesn&apos;t work)</p>
             <button aria-label="copy button" onClick={handleCopy}><Copy size={12}/></button>
           </div>
           
