@@ -1,40 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🔗 Link Shortener
 
-## Getting Started
+Um simples **encurtador de URLs** desenvolvido com **Next.js (pages router)** e **Axios**, criado como projeto de estudo e demonstração para portfólio.  
+O objetivo principal é praticar a integração entre **front-end** e **API Routes** do Next.js.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Interface simples para inserir uma URL.
+- Geração de uma URL encurtada fake (sem persistência).
+- Exibição do link encurtado com opção de copiar para a área de transferência.
+- Estrutura pronta para futura implementação de redirecionamento com página dinâmica `[id].tsx`.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 🛠️ Tecnologias utilizadas
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+- [Next.js](https://nextjs.org/) — React framework
+- [Axios](https://axios-http.com/) — Requisições HTTP
+- [Lucide React](https://lucide.dev/) — Ícones
+- [TailwindCSS](https://tailwindcss.com/) — Estilização
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Estrutura do projeto
+├── api/
+│ └── shorten.ts # Endpoint que gera o link encurtado
+└──index.tsx # Página principal com formulário e exibição
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## ⚙️ Como rodar localmente
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/link-shortener.git
+   cd link-shortener
 
-## Deploy on Vercel
+2.Instale as dependências:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    npm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+3.Rode o projeto em modo de desenvolvimento:
+
+    npm run dev
+
+4.Acesse em:
+
+    http://localhost:3000
